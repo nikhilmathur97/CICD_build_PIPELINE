@@ -3,7 +3,6 @@ phases:
   install:
     commands:
       - echo Installing apache
-      - sudo apt-get update
       - sudo apt-get install apache -y
   build:
     commands:
