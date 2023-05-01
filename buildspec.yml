@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Installing apache
       - sudo apt-get update
-      - sudo apt install apache -y
+      - sudo apt-get install apache2 -y
   build:
     commands:
       - echo Build started on 'date'
