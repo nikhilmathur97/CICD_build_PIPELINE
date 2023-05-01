@@ -11,8 +11,4 @@ phases:
       - cp index.html /var/www/html/
   post_build:
     commands:
-      - echo Configuring apache
-
-artifacts:
-  files:
-    - /var/www/html/index.html      
+      - echo Configuring apache2     
