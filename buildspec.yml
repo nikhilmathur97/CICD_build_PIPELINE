@@ -2,15 +2,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing apache2
-      - sudo apt install apache2 -y
+      - echo Installing apache
+      - sudo apt-get update
+      - sudo apt install apache -y
   build:
     commands:
       - echo Build started on 'date'
       - cp index.html /var/www/html/
   post_build:
     commands:
-      - echo Configuring apache2
+      - echo Configuring apache
 
 artifacts:
   files:
