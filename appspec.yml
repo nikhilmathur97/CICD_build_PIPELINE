@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+hooks:
+  AfterInstall:
+    - location: script/install_apache2.sh
+      timeout: 300
+      runas: root
+  Applicationstart:
+    - location: script/start_apache2.sh
+      timeout: 300
+      runas : root
