@@ -12,3 +12,6 @@ phases:
   post_build:
     commands:
       - echo Configuring apache2     
+  artifacts:
+  files:
+    - /var/www/html/index.html 
