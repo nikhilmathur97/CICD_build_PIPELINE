@@ -5,10 +5,10 @@ files:
     destination: /var/www/html
 hooks:
   AfterInstall:
-    - location: script/install_apache2.sh
+    - location: scripts/install_apache2.sh
       timeout: 300
       runas: root
   Applicationstart:
-    - location: script/start_apache2.sh
+    - location: scripts/start_apache2.sh
       timeout: 300
       runas : root
